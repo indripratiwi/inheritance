@@ -1,0 +1,20 @@
+class Guru():
+    def __init__(self, nama, nip, alamat, no_telp):
+        self.nama = nama
+        self.nip = nip
+        self.alamat = alamat
+        self.no_telp = no_telp
+ 
+    def data_guru(self):
+        print('Nama :', self.nama, '\nNIP :',self.nip, '\nAlamat :',self.alamat, '\nNo. Telp :',self.no_telp)
+ 
+class Murid(Guru):
+ 
+    def data_guru(self):
+        print('Nama :', self.nama,'\nAlamat :', self.alamat, '\nNo. Telp :', self.no_telp)
+ 
+guru1 = Guru('Indri Pratiwi Ramadhani', '123456789', 'Jl. Traktor 2', '082291546060')
+guru1.data_guru()
+ 
+murid = Murid('Indri','123456789', 'Jl. Traktor 2', '082291546060')
+murid.data_guru()
